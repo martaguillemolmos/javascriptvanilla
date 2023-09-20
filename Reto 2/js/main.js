@@ -1,13 +1,13 @@
+// Declara un String, texto, que contenga tu nombre, después muestra un mensaje de bienvenida
+// por consola. Por ejemplo: si introduzco “Fernando”, me aparezca “Bienvenido Fernando”.
 
-let a = 2;
-let b = 5;
+let a = ("Marta");
 
-
-    if (a > b){
-        console.log ("variable A es mayor");
+    if (a == "Marta"){
+        console.log (`Bienvenida ${a}`);
+      //   Anotación, para poder interpolar el resultado, en {} tenemos que indicar el nombre de la variable, NO la variable.
      } else {
-        console.log ("variable B es mayor");
-    
+        console.log ("Introduce Marta");
      }
 
 
