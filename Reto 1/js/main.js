@@ -6,9 +6,12 @@ let a = 2;
 let b = 5;
 
 
-    if (a > b){
+    if (a == b){
+      console.log ("Las variables son iguales")
+    }
+    else if (a > b){
         console.log ("variable A es mayor");
-     } else {
+   } else {
         console.log ("variable B es mayor");
     
      }
