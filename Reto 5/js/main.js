@@ -6,10 +6,10 @@ let b = (a % 2);
 
 if (b == 0) {
 // Nota, para poder decir que el número es igual, debemos de poner ==, en vez de =.
-    alert("Es divisible entre 2");
+    console.log("Es divisible entre 2");
 
 } else{
-    alert("No es divisible entre 2");
+    console.log("No es divisible entre 2");
 }
 
 

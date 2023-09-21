@@ -6,5 +6,5 @@ let a = parseFloat(prompt("Introduce valor del producto"));
 
 let b = ((a)*(0.21))+ (a);
 
-alert (b);
+console.log (b);
 
