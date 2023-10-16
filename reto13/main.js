@@ -10,10 +10,11 @@
 // %: módulo, resto de la división entre operando1 y operando2.
 
 function calculadora() {
-  let operando1 = parseInt(prompt("Introduce operando 1"));
-  let operando2 = parseInt(prompt("Introduce operando 2"));
+  let operando1 = prompt("Introduce operando 1");
+  let operando2 = prompt("Introduce operando 2");
   let operador = prompt("Introduce un operador");
   if ((operando1 != "") & (operando2 != "") & (operador != "")) {
+    
     if (
       operador === "+" ||
       operador === "-" ||
