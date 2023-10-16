@@ -9,21 +9,28 @@
 // ^: 1o operando como base y 2o como exponente.
 // %: módulo, resto de la división entre operando1 y operando2.
 
-
-
 function calculadora() {
-    let a = prompt("Introduce operando 1");
-    let b = prompt("Introduce operando 2");
-    let c = prompt ("Introduce un operador");
-    if (c === "+" || c === "-" || c == "/" || c == "*" || c == "^" || c == "%") {
-        let resultado = `${parseFloat(a)}${c}${parseFloat(b)}`
-        alert(eval(resultado))
+  let operando1 = parseInt(prompt("Introduce operando 1"));
+  let operando2 = parseInt(prompt("Introduce operando 2"));
+  let operador = prompt("Introduce un operador");
+  if ((operando1 != "") & (operando2 != "") & (operador != "")) {
+    if (
+      operador === "+" ||
+      operador === "-" ||
+      operador == "/" ||
+      operador == "*" ||
+      operador == "^" ||
+      operador == "%"
+    ) {
+      let resultado = `${parseFloat(operando1)}${operador}${parseFloat(
+        operando2
+      )}`;
+      alert(eval(resultado));
     } else {
-        alert("introduce un operador + o -")
+      alert("Introduce un operador válido: +, -, /, *, ^ o %");
     }
+  } else {
+    alert("Introduce un número o un operador");
+  }
 }
-
-
-calculadora()
-
-
+calculadora();
