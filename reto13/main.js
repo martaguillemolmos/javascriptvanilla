@@ -13,25 +13,22 @@ function calculadora() {
   let operando1 = prompt("Introduce operando 1");
   let operando2 = prompt("Introduce operando 2");
   let operador = prompt("Introduce un operador");
-  if ((operando1 != "") & (operando2 != "") & (operador != "")) {
-    
-    if (
-      operador === "+" ||
-      operador === "-" ||
-      operador == "/" ||
-      operador == "*" ||
-      operador == "^" ||
-      operador == "%"
-    ) {
-      let resultado = `${parseFloat(operando1)}${operador}${parseFloat(
-        operando2
-      )}`;
-      alert(eval(resultado));
-    } else {
-      alert("Introduce un operador válido: +, -, /, *, ^ o %");
-    }
+
+  if (operando1 === "" && operando2 === "" && operador === "") {
+    return alert("Debes de enviar un operando 1, operando2 y operador");
+  }
+
+  if (
+    operador === "+" ||
+    operador === "-" ||
+    operador == "/" ||
+    operador == "*" ||
+    operador == "^" ||
+    operador == "%"
+  ) { let resultado = `${parseFloat(operando1)}${operador}${parseFloat(operando2)}`;
+
+    return alert(eval(resultado));
   } else {
-    alert("Introduce un número o un operador");
+    return alert("Introduce un operador válido: +, -, /, *, ^ o %");
   }
 }
-calculadora();
